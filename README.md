@@ -1,13 +1,8 @@
 # Automatic Modulation Classification using CNN
 
-## Project-Based Learning (PBL)
-**Department of Electronics & Telecommunication Engineering**  
-**Symbiosis Institute of Technology, Pune**  
-*(Constituent of Symbiosis International (Deemed University))*
-
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Automatic Modulation Classification (AMC) is a critical function in modern wireless communication systems, enabling intelligent receivers to identify the modulation scheme of a received signal without prior knowledge of the transmitter.  
 
@@ -15,7 +10,7 @@ This project implements a **Convolutional Neural Network (CNN)**–based approac
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - To design and implement a CNN-based model for automatic modulation classification  
 - To train the model using real-world radio signals from the RadioML dataset  
@@ -24,7 +19,7 @@ This project implements a **Convolutional Neural Network (CNN)**–based approac
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - **Dataset:** RadioML 2016.10a  
 - **Data Type:** Raw IQ samples  
@@ -32,11 +27,11 @@ This project implements a **Convolutional Neural Network (CNN)**–based approac
 - **Modulation Schemes:** BPSK, QPSK, 8PSK, QAM16, QAM64, AM, FM, etc.  
 - **SNR Range:** −20 dB to +18 dB  
 
-📌 *Due to large file size, the dataset is not included in this repository and must be downloaded separately.*
+*Due to large file size, the dataset is not included in this repository and must be downloaded separately.*
 
 ---
 
-## 🧠 Methodology
+## Methodology
 
 1. **Data Preprocessing**
    - Loading raw IQ samples from the RadioML dataset
@@ -61,7 +56,7 @@ This project implements a **Convolutional Neural Network (CNN)**–based approac
 ---
 
 
-## ⚙️ Technologies Used
+##  Technologies Used
 
 - **Programming Language:** Python 3.10  
 - **Deep Learning Framework:** PyTorch  
@@ -70,16 +65,33 @@ This project implements a **Convolutional Neural Network (CNN)**–based approac
 
 ---
 
-## ▶️ How to Run the Project
+##  How to Run the Project
 
 1. Create and activate virtual environment:
 ```bash
 python3 -m venv amc_env
 source amc_env/bin/activate
-Install dependencies:
+```
+
+##Install dependencies:
 pip install -r requirements.txt
 
-Run the training script:
+##Run the training script:
 python -m src.train.train
 
-📌 High CPU utilization during training i
+## High CPU utilization during training is expected
+
+## Results
+The CNN successfully trains on raw IQ samples
+Epoch-wise loss decreases, indicating effective learning
+The model demonstrates feasibility of deep learning–based AMC
+
+## Applications
+Cognitive Radio Systems
+Software Defined Radio (SDR)
+Spectrum Monitoring
+Intelligent Wireless Receivers
+Defence and Secure Communication
+
+##Author
+-Arav Upadhyay
